@@ -1,0 +1,221 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+.body-home {
+    background-image: url(images/background-01-port.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-meals {
+    background-image: url(images/background-02-port.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========= Header =========*/
+
+header {
+    background-color: #2196f3;
+
+    width: 100%;
+    height: 50px;
+    top: 0;
+
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+header i {
+    float: left;
+    padding: 17px 0 0 17px;
+    color: #fff;
+}
+
+header img {
+    width: 150px;
+    padding: 14px 25px 0 0;
+}
+
+/*========= HomePage =========*/
+
+#home-logo-img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px;
+}
+
+#home-logo-text {
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+/*=== HomePage Menu ===*/
+
+.home-menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid #fff;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/*========= Meals Page =========*/
+
+#meals {
+    padding: 50px 0 0 0;
+}
+
+/*=== Meals list ===*/
+
+.meals-list a {
+    text-decoration: none;
+}
+
+.meals-list-items {
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+}
+
+.meals-list-items h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 10px;
+}
+
+.meals-list-items i {
+    float: right;
+    color: #1a1a1a;
+    padding-right: 10px;
+}
+
+.meals-list-items p {
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+/*========= Recipes =========*/
+
+#recipe {
+    padding-top: 50px;
+}
+
+/*=== Recipe details ===*/
+
+.recipe-details img {
+    width: 100%;
+}
+
+.recipe-details h1 {
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+    padding: 5px;
+}
+
+.recipe-details h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 0 0 10px;
+}
+
+.recipe-details-info {
+    margin: 0 25px 0 25px;
+}
+
+.recipe-details-info p {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.recipe-details-ingredients label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-steps {
+    padding: 20px 0 0 0;
+}
+
+.recipe-details-steps ol {
+    padding-left: 28px;
+}
+
+/*========= Responsive Layout =========*/
+
+@media only screen and (min-width: 600px) {
+    #meals {
+        width: 80%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #meals {
+        width: 60%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #meals {
+        width: 40%;
+        margin: auto;
+    }
+
+    #recipe {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .body-home {
+        background-image: url(images/background-01-land.png);
+    }
+
+    .body-meals {
+        background-image: url(images/background-02-land.png);
+    }
+}
