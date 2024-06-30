@@ -1,8 +1,8 @@
-let catergory = getCatergory();
+let category = getCategory();
 
 function getRecipeList() {
     let rootPath = "https://mysite.itvarsity.org/api/recipe-book/";
-    let fullPath = rootPath + "get-recipes/?catergory=" + catergory;
+    let fullPath = rootPath + "get-recipes/?category=" + category;
 
     fetch(fullPath)
         .then(function (response) {
@@ -13,10 +13,10 @@ function getRecipeList() {
         })
 }
 
-function getCatergory() {
+function getCategory() {
     let url = window.location.href;
     let pos = url.search("=");
-    let catergory = url.slice(pos + 1);
+    let category = url.slice(pos + 1);
 
-    return catergory;
+    return category;
 }
